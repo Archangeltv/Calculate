@@ -91,7 +91,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  width: 400px;
 }
 
 .bottom {
@@ -347,4 +346,36 @@ h3 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 3px;
+}
+
+@media (max-width: 900px) {
+  body {
+    padding: 20px;
+  }
+  .bottom {
+    grid-template-columns: repeat(4, 22%);
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    width: 100%;
+  }
+  .delete {
+    height: 100%;
+  }
+  .reset {
+    height: 100%;
+  }
+  .slider {
+    flex-direction: column;
+    gap: 2px;
+  }
+  .slider span {
+    margin-bottom: 0;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
